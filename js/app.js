@@ -94,6 +94,9 @@ allEnemyLocation.forEach(function (locationY) {
 	allEnemies.push(enemy);
 });
 
+//Initialized player default location on the canvas
+var player = new Player(202, 405);
+
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
