@@ -8,8 +8,16 @@ Classic Arcade Game
 * Player has to cross the field avoiding all enemies and has to reach to water.
 
 # Where I Can Play The Game?
+* online
 [Play here](http://yashsati29.github.io/ud-classic-arcade-game)
 
+* offline
+1. Clone the following repo: 
+* `git clone https://github.com/yashsati29/ud-classic-arcade-game`
+
+2. Load index.html in browser.
+
+3. Play the game
 # How to play?
 * Use &uarr; to move player up.
 * Use &darr; to move player down.
