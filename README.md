@@ -1,6 +1,28 @@
-frontend-nanodegree-arcade-game
+Classic Arcade Game
 ===============================
+`This a basic project developed by DevS for Udacity's Front End Nanodegree's Project`
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+# About the game (Arcade Game)
+* This game is simple clone of classic arcade game.
+* There is a player character and enemies(Bugs).
+* Player has to cross the field avoiding all enemies and has to reach to water.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+# Where I Can Play The Game?
+[Play here](http://yashsati29.github.io/ud-classic-arcade-game)
+
+# How to play?
+* Use &uarr; to move player up.
+* Use &darr; to move player down.
+* Use &rarr; to move player to right.
+* Use &larr; to move player to left.
+
+# Skills Required For The Completion Of The Project?
+* Javascript
+
+# What I learned?
+* How to use javascript in various situation while developing your own apps.
+* Object oriented approach by the use of Javascript classes
+
+# Any References Used?
+* collision detection reference from stackoverflow
+* random speed generation reference from stackoverflow
