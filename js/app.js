@@ -87,6 +87,12 @@ Player.prototype.handleInput = function (keyPress) {
 
 // Place all enemy objects in an array called allEnemies
 var allEnemyLocation = [63,147,230];
+var allEnemies = [];
+
+allEnemyLocation.forEach(function (locationY) {
+	enemy = new Enemy(0, locationY, 100);
+	allEnemies.push(enemy);
+});
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
