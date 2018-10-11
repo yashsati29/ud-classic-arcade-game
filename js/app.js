@@ -53,6 +53,38 @@ Player.prototype.render = function () {
 	ctx.drawImage(Resources.get(this.player), this.x, this.y);
 };
 
+// Enables the user to use keyinput to jump from tile to tile
+Player.prototype.handleInput = function (keyPress) {
+
+    //Enables the user to move to the left and also checks that the character should not be going off-canvas to left
+    if (keyPress === 'left' && this.x > 0) {
+    	this.x -= 102;
+    };
+
+    //Enables the user to move to the right and also checks that the character should not be going off-canvas to right
+    if (keyPress === 'right' && this.x < 405) {
+    	this.x += 102;
+    };
+
+    //Enables the user to move to the upside on canvas
+    if (keyPress === 'up' && this.y > 0) {
+    	this.y -= 83;
+    };
+
+    //Enables the user to move to the downside and also checks that the character should not be going off-canvas to bottom
+    if (keyPress === 'down' && this.y < 405) {
+    	this.y += 83;
+    };
+
+    //If user sucessfully reached to the top of the canvas i.e. water, then reset the player to its default position on canvas
+    if (this.y < 0) {
+    	setTimeout(() => {
+    		this.x = 202;
+    		this.y = 405;
+    	}, 800);
+    };
+};
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
